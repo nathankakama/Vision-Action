@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 
 :root {
-    --brand: #ff4d29;
+    --brand: #004493;
     --dark: #092032;
     --body: #516171;
     --border: rgba(0,0,0,0.08);
@@ -87,6 +87,28 @@ section {
     background-color: var(--brand) !important;
 }
 
+/* styles added */
+    .img-box{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #004493;
+    }
+    .info-link{
+        color: white;
+    }
+    .info-link:hover{
+        color: dodgerblue;
+    }
+    .img-about{
+        margin-top: 80px;
+        height: 600px;
+        width: 650px;
+    }
+/* end styles */
 
  /* slide */
  .slide {
@@ -98,14 +120,14 @@ section {
 }
 
 .slide1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slider-2.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slider-4.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,7 +194,8 @@ section {
 }
 
 .navbar .navbar-nav .nav-link.active {
-    color: var(--brand);
+    color: #0258d1;
+    border-bottom: 1px solid #0258d1;
 }
 
 .navbar-brand {
@@ -195,8 +218,8 @@ section {
 }
 
 .btn-brand:hover {
-    background-color: #d64022;
-    border-color: #d64022;
+    background-color: #0258d1;
+    border-color: #0258d1;
     color: #fff;
 }
 
@@ -228,7 +251,7 @@ text-align: center;}
 
 
 #milestone {
-    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url(../img/bg_banner1.jpg);
+    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../img/back.jpeg), #082032;;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -437,7 +460,7 @@ text-align: center;}
 }
 
 footer {
-    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../img/bg_banner1.jpg), #082032;;
+    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../img/back.jpeg), #082032;;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -496,4 +519,12 @@ input.form-control {
 .form-control:focus {
     box-shadow: none;
     border-color: var(--brand);
+}
+
+@media screen and (max-width:768px) {
+    .img-about{
+        margin-top: 0px;
+        height: 400px;
+        width:95%;
+    }
 }
